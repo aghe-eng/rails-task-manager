@@ -1,0 +1,23 @@
+<%= form_with model: task do |f| %>
+ <p>
+  <%= f.label :title %>
+  </p>
+  <p>
+  <%= f.text_field :title %>
+  </p>
+ <p>
+  <%= f.label :details %>
+  </p>
+  <p>
+  <%= f.text_field :details %>
+  </p>
+  <p>
+  <%= f.label :completed %>
+  </p>
+  <p>
+  <%= f.number_field :completed %>
+  </p>
+  <p>
+  <%= f.submit %>
+   </p>
+<% end %>
